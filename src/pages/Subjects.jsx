@@ -11,7 +11,7 @@ function Subjects() {
   return (
     <div className='bg-violet-500 h-[100vh]'>
         <div>
-            <Header heading={"Subject"}/>
+            <Header heading={"SUBJECT"}/>
         </div>
         <div>
             <CourseDetail/>

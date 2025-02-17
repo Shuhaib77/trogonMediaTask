@@ -10,7 +10,7 @@ function Header({heading}) {
             style={{ color: "#ffffff" }}
           ></i>
         </div>
-        <h1 className="text-center font-bold text-2xl">{heading}</h1>
+        <h1 className="text-center text-white font-bold text-4xl">{heading}</h1>
       </div>
     </div>
   );
