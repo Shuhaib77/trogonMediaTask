@@ -6,7 +6,7 @@ function AllSubjects() {
   return (
     <>
      <div>
-            <Header heading={"Chapter"}/>
+            <Header heading={"CHAPTER"}/>
         </div>
      <div>
      <ExploreSubject />
