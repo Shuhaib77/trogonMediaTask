@@ -15,6 +15,7 @@ function ExploreSubject() {
     fn();
   }, []);
   console.log(datas, "tfyghuijklm;");
+  if (loading) return <p>Loading...</p>;
 
 //   const handleClick=(id)=>{
 //     navigate(`https://trogon.info/interview/php/api/modules.php?subject_id=${id}`)
@@ -42,13 +43,13 @@ function ExploreSubject() {
             </h1>
 
            <div className="p-[30px] ">
-           {datas.map((item, i) => (
+           {datas?.map((item, i) => (
               <div className="w-full h-[150px] bg-gradient-to-r from-violet-300 to-violet-500 text-white rounded-2xl flex items-center mt-[10px]  shadow-md hover:scale-105 transition-transform" onClick={()=>{
-                navigate(`/subject/${item.id}`)
+                navigate(`/subject/${item?.id}`)
               }}>
                 <div className="w-[100px] h-[100px] rounded-lg overflow-hidden shadow-md">
                   <img
-                    src={item.image}
+                    src={item?.image}
                     alt=""
                     className="w-full h-full object-cover"
                   />
@@ -58,7 +59,7 @@ function ExploreSubject() {
                     {item.title}
                   </h1>
                   <p className="text-sm text-gray-200">
-                  {item.description}
+                  {item?.description}
                   </p>
                 </div>
               </div>

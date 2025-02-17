@@ -5,12 +5,12 @@ import Header from "../components/Header";
 function AllSubjects() {
   return (
     <>
-     <div>
-            <Header heading={"CHAPTER"}/>
-        </div>
-     <div>
-     <ExploreSubject />
-     </div>
+      <div>
+        <Header heading={"CHAPTER"} />
+      </div>
+      <div>
+        <ExploreSubject />
+      </div>
     </>
   );
 }

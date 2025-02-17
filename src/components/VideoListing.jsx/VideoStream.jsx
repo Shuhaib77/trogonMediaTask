@@ -57,14 +57,14 @@ function VideoStream() {
           {isPlaying ? "Pause" : "Play"}
         </button>
       )}
-      <div className="h-[400px] w-[100%] shadow-2xl p-[50px] flex flex-col gap-[20px]">
-        <h1 className="text-3xl font-bold">{video.title}</h1>
-        <p className="text-gray-600">{video.description}</p>
-        <div>
+      <div className="lg:h-[400px]  sm:h-[100%] w-[100%] shadow-2xl p-[50px] flex flex-col gap-[20px]">
+        <h1 className="text-3xl sm:text-center lg:text-left font-bold">{video?.title}</h1>
+        <p className="text-gray-600">{video?.description}</p>
+        <div >
           <button className="bg-white shadow-black p-[20px] rounded-md shadow-2xl">
             <i className="fa-solid fa-download fa-2xl" style={{ color: "#000000" }}></i> DOWNLOAD
           </button>
-          <button className="bg-white shadow-black p-[20px] rounded-md shadow-2xl ml-[5px]">
+          <button className="bg-white shadow-black p-[20px] rounded-md shadow-2xl ml-[5px] lg:mt-0 sm:mt-10px">
             <i className="fa-regular fa-circle-question fa-2xl" style={{ color: "#000000" }}></i> DOUBTS
           </button>
         </div>
