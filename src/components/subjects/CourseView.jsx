@@ -22,7 +22,7 @@ function CourseView() {
       <div className=" ">
         <h1 className="text-3xl ml-[10px]">LEVEL1</h1>
         <div className="w-[100%] lg:h-[500px] sm:h-[100%] overflow-y-scroll m-10px bg-violet-200  mt-[20px]">
-          {dataById?.map((item, i) => (
+          { dataById.length===0? <h1>"data is empty"</h1>: dataById?.map((item, i) => (
             <div
               className="w-[100%] h-[200px]  flex justify-around items-center  mt-[20px] bg-violet-400  "
               onClick={() => {

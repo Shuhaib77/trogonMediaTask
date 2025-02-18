@@ -31,7 +31,7 @@ function VideoList() {
   return (
     <>
       <div className="bg-violet-700">
-        {videoById?.map((item, i) => (
+        { videoById.length===0? <h1 className="text-center">"data is empty"</h1>:videoById?.map((item, i) => (
           <div className="pl-[30px] pr-[30px] pt-[20px]">
             <h1 className="text-white font-bold ">step-{i + 1}</h1>
             <h1 className="pl-[5px] text-yellow-50 text-center">{item?.title}</h1>

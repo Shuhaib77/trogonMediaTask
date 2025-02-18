@@ -22,7 +22,7 @@ function CourseDetail() {
   if (loading) return <p>Loading...</p>;
   return (
     <div className="pl-[20px] pr-[20px] w-[100%] ">
-      {courseData?.map((item, i) => (
+      {courseData.length===0? <h1>"data is empty"</h1>: courseData?.map((item, i) => (
         <div className="w-[100%] h-[200px] bg-[#ffffffe1]  grid place-content-center place-items-center gap-y-5 ">
           <h1 className="text-4xl font-bold">{item?.title}</h1>
           <h1 className="font-semibold">{item?.description}</h1>
