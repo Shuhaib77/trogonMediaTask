@@ -23,9 +23,10 @@ function VideoStream() {
     if (!url) return "";
     const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/);
     return match
-      ? `https://www.youtube.com/embed/${match[1]}?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&controls=0`
+      ? `https://www.youtube.com/embed/${match[1]}?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&controls=0&fs=0&cc_load_policy=0`
       : "";
   };
+  
   
 
   const getVimeoEmbedUrl = (url) => {
