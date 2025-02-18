@@ -18,7 +18,9 @@ function VideoStream() {
   const getYouTubeEmbedUrl = (url) => {
     if (!url) return "";
     const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/);
-    return match ? `https://www.youtube.com/embed/${match[1]}?autoplay=0&modestbranding=1&rel=0&showinfo=0` : "";
+    return match
+      ? `https://www.youtube.com/embed/${match[1]}?autoplay=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3`
+      : "";
   };
   const getVimeoEmbedUrl = (url) => {
     const match = url.match(/vimeo\.com\/(\d+)/);
