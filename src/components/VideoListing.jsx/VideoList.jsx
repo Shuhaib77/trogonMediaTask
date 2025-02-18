@@ -21,7 +21,7 @@ function VideoList() {
     fn();
   }, []);
 
-  console.log(videoById, "kkkkkk");
+  console.log(videoById,url, "kkkkkk");
  
   // const videoData=dataById.filter((item,i)=>item.id==url)
   // console.log(videoData, "tfyghuijklm;");
@@ -38,7 +38,7 @@ function VideoList() {
             <div
               className="bg-violet-400 shadow-md mt-[20px]"
               onClick={() => {
-                navigate(`/stream/${item?.id}`);
+                navigate(`/stream/${item.id}`);
               }}
             >
               <div className="w-[100%] lg:h-[200px] sm:h-[100%]  flex justify-around items-center  mt-[20px] ">
