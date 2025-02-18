@@ -19,7 +19,7 @@ function VideoStream() {
     if (!url) return "";
     const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/);
     return match
-      ? `https://www.youtube.com/embed/${match[1]}?autoplay=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&controls=1&fs=1&enablejsapi=1&hideinfo=1`
+      ? `https://www.youtube.com/embed/${match[1]}?autoplay=0&modestbranding=1&rel=0&iv_load_policy=3&controls=0&fs=1&enablejsapi=1`
       : "";
   };
   const getVimeoEmbedUrl = (url) => {
