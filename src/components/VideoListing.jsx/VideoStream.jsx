@@ -24,7 +24,7 @@ function VideoStream() {
   };
   const getVimeoEmbedUrl = (url) => {
     const match = url.match(/vimeo\.com\/(\d+)/);
-    return match ? `https://player.vimeo.com/video/${match[1]}` : "";
+    return match ? `https://player.vimeo.com/video/${match[1]}?background=1&autoplay=0` : "";
   };
   let embedUrl = "";
   if (video.video_type === "YouTube") {
