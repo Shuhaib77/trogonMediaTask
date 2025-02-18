@@ -26,7 +26,7 @@ function CourseDetail() {
         <div className="w-[100%] h-[200px] bg-[#ffffffe1]  grid place-content-center place-items-center gap-y-5 ">
           <h1 className="text-4xl font-bold">{item?.title}</h1>
           <h1 className="font-semibold">{item?.description}</h1>
-          <button className="p-3 w-200px bg-violet-500 rounded-lg">
+          <button className="p-3 w-200px bg-violet-500 rounded-lg cursor-pointer">
             Browse other course
           </button>
         </div>

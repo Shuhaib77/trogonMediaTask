@@ -6,13 +6,14 @@ function Header({heading}) {
   return (
     <div>
       <div className="bg-violet-500 h-[70px] w-[100%] p-[20px] ">
-        <div className="float-left ">
+        <div className="float-left cursor-pointer ">
           <i
             class="fa-regular fa-circle-left fa-xl "
             style={{ color: "#ffffff" }}
             onClick={()=>{
                 navigate(-1)
             }}
+            
 
           ></i>
         </div>
