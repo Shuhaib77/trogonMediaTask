@@ -45,7 +45,7 @@ function ExploreSubject() {
            <div className="p-[30px] ">
            {datas.length===0? <h1 className="text-center">"data is empty"</h1>:datas?.map((item, i) => (
               <div className="w-full h-[150px] bg-gradient-to-r from-violet-300 to-violet-500 text-white rounded-2xl flex items-center mt-[10px]  shadow-md hover:scale-105 transition-transform" onClick={()=>{
-                navigate(`/subject/${item?.id}`)
+                navigate(`/subject/${item.id}`)
               }}>
                 <div className="w-[100px] h-[100px] rounded-lg overflow-hidden shadow-md">
                   <img
